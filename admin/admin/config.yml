@@ -1,0 +1,64 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # ---------- SWATCHES ----------
+  - name: "swatches"
+    label: "Fabric Swatches"
+    label_singular: "Swatch"
+    folder: "content/swatches"
+    create: true
+    slug: "{{code}}"
+    summary: "{{code}}"
+    fields:
+      - { name: "code", label: "Swatch code / name (e.g. 310, Sofia 05)", widget: "string" }
+      - { name: "line", label: "Fabric line (e.g. Local, Premium)", widget: "string", required: false }
+      - { name: "photo", label: "Swatch photo", widget: "image" }
+
+  # ---------- PRODUCTS ----------
+  - name: "products"
+    label: "Products"
+    label_singular: "Product"
+    folder: "content/products"
+    create: true
+    slug: "{{title}}"
+    summary: "{{title}} — {{collection}}"
+    fields:
+      - { name: "title", label: "Product name", widget: "string" }
+      - name: "collection"
+        label: "Collection"
+        widget: "select"
+        options: ["Sofas & Sectionals","Upholstered Beds","Modular Cabinets","Dining","Accent Chairs","Full-Home Projects"]
+      - { name: "spec", label: "Short description (fabric / finish / style)", widget: "text" }
+      - { name: "photos", label: "Photos (add multiple angles)", widget: "image", multiple: true }
+
+  # ---------- HOMEPAGE TEXTS ----------
+  - name: "homepage"
+    label: "Homepage Texts"
+    files:
+      - name: "hero"
+        label: "Hero"
+        file: "content/homepage/hero.md"
+        fields:
+          - { name: "eyebrow", label: "Small line above title", widget: "string" }
+          - { name: "title", label: "Main headline", widget: "string" }
+          - { name: "subtitle", label: "Sub-text", widget: "text" }
+
+  # ---------- TRUSTED BY / CLIENTS ----------
+  - name: "clients"
+    label: "Trusted By (Clients)"
+    label_singular: "Client"
+    folder: "content/clients"
+    create: true
+    slug: "{{name}}"
+    summary: "{{name}} ({{type}})"
+    fields:
+      - { name: "name", label: "Client name", widget: "string" }
+      - name: "type"
+        label: "Type"
+        widget: "select"
+        options: ["Celebrity","Commercial & Business"]
