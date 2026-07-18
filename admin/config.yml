@@ -22,6 +22,10 @@ collections:
             summary: "{{fields.code}}"
             fields:
               - { name: "code", label: "Swatch code / name (e.g. 310, Sofia 05)", widget: "string" }
+              - name: "color"
+                label: "Colour group (swatches are grouped by this on the site)"
+                widget: "select"
+                options: ["Beige & Cream","White","Grey","Black & Charcoal","Brown & Tan","Blue","Green","Pink & Rose","Red & Maroon","Yellow & Gold","Purple","Orange","Multi & Pattern"]
               - { name: "line", label: "Fabric line (e.g. Local, Premium)", widget: "string", required: false }
               - { name: "photo", label: "Swatch photo", widget: "image" }
 

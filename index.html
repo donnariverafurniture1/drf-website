@@ -82,7 +82,7 @@
   /* COLLECTIONS */
   .grid-col{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 28px}
   .col{cursor:pointer;background:#fff;border:1px solid rgba(33,27,22,.07);border-radius:7px;overflow:hidden;box-shadow:0 24px 52px -34px rgba(33,27,22,.32);transition:transform .38s,box-shadow .38s}
-  .col .frame{aspect-ratio:4/5;border-radius:0;overflow:hidden;position:relative;background:var(--greige)}
+  .col .frame{aspect-ratio:4/5;border-radius:0;overflow:hidden;position:relative;background-color:var(--greige)}
   .col:hover{transform:translateY(-7px);box-shadow:0 38px 74px -34px rgba(33,27,22,.45)}
   .col .frame .sheen{position:absolute;inset:0;background:radial-gradient(65% 50% at 34% 28%,rgba(255,255,255,.45),transparent 62%)}
   .col .frame .ph{top:14px;left:14px}
@@ -248,7 +248,7 @@
   .cov-grid{width:min(1160px,92vw);margin:40px auto 70px;display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px}
   .item{cursor:pointer;background:#fff;border:1px solid rgba(33,27,22,.07);border-radius:7px;overflow:hidden;box-shadow:0 22px 48px -34px rgba(33,27,22,.3);transition:transform .3s,box-shadow .3s}
   .item:hover{transform:translateY(-6px);box-shadow:0 34px 66px -34px rgba(33,27,22,.45)}
-  .item .ph{aspect-ratio:4/5;background-size:cover;background-position:center;background-color:#f3ede4}
+  .item .ph{position:relative;aspect-ratio:4/5;background-size:cover;background-position:center;background-color:#f3ede4}
   .item .cap{padding:16px 18px 18px}
   .item .cap h3{font-size:1.3rem;font-weight:400}
   .item .cap .a{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);margin-top:6px;display:inline-block}
@@ -289,12 +289,16 @@
   .cart-empty{text-align:center;color:var(--soft);padding:50px 10px;font-family:'Jost';font-size:.92rem}
   .cart-foot{padding:20px 24px;border-top:1px solid var(--line)}
   .cart-foot .btn{width:100%;justify-content:center}
-  .swgrid{display:flex;flex-wrap:wrap;gap:8px}
-  .swg{width:46px;height:46px;border-radius:6px;background-size:cover;background-position:center;cursor:pointer;border:2px solid #fff;box-shadow:0 0 0 1px var(--line);transition:.15s}
+  .swcolors{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+  .swcolor{font-family:'Jost';font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;border:1px solid var(--line);border-radius:100px;cursor:pointer;color:var(--soft);transition:.15s}
+  .swcolor:hover{border-color:var(--ink);color:var(--ink)}
+  .swcolor.on{background:var(--ink);color:var(--porcelain);border-color:var(--ink)}
+  .swgrid{display:flex;flex-wrap:wrap;gap:10px}
+  .swg{width:48px;height:48px;border-radius:5px;background-size:cover;background-position:center;cursor:pointer;border:1px solid #fff;box-shadow:0 0 0 1px var(--line);transition:.15s}
   .swg.on{box-shadow:0 0 0 2px var(--rose-deep);transform:scale(1.06)}
-  .lb-cmp{position:absolute;bottom:14px;right:14px;width:150px;height:150px;border-radius:8px;background-size:cover;background-position:center;box-shadow:0 16px 38px -8px rgba(33,27,22,.6);border:3px solid #fff;display:none;cursor:grab;touch-action:none;user-select:none}
+  .lb-cmp{position:absolute;bottom:14px;right:14px;width:120px;height:120px;border-radius:8px;background-size:cover;background-position:center;box-shadow:0 16px 38px -8px rgba(33,27,22,.6);border:1px solid #fff;display:none;cursor:grab;touch-action:none;user-select:none}
   .lb-cmp.on{display:block}
-  .lb-cmp .lbl{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;font-family:'Jost';font-weight:400;font-size:.58rem;letter-spacing:.08em;padding:3px 10px;border-radius:100px;white-space:nowrap}
+  .lb-cmp .lbl{position:absolute;bottom:6px;left:50%;transform:translateX(-50%);background:rgba(33,27,22,.8);color:#fff;font-family:'Jost';font-weight:400;font-size:.56rem;letter-spacing:.08em;padding:3px 10px;border-radius:100px;white-space:nowrap}
   .lb-cmp .x{position:absolute;top:-9px;right:-9px;width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;border:2px solid #fff;font-size:.7rem;line-height:1;display:grid;place-items:center;cursor:pointer}
   .cfg-note-sm{font-size:.66rem;color:var(--soft);font-family:'Jost';margin-top:6px}
   .realsw{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:11px}
@@ -625,8 +629,9 @@
       <p id="lbSpec"></p>
       <div class="cfg">
         <div class="cfg-label">Fabric <em id="fabName">Not selected</em></div>
+        <div class="swcolors" id="swColors"></div>
         <div class="swgrid" id="swgrid"></div>
-        <div class="cfg-hint">Tap up to 3 swatches to compare on the piece — drag each onto the upholstery.</div>
+        <div class="cfg-hint">Pick a colour, then tap up to 3 swatches to compare on the piece — drag each onto the upholstery.</div>
         <div class="cfg-label">Finish</div>
         <div class="chips" id="finishes"></div>
         <div class="cfg-label">Add-ons</div>
@@ -694,11 +699,15 @@ function _catByName(n){var s=(n||'').toLowerCase().trim();for(var i=0;i<CATEGORI
 function renderCategoryCards(){
   var gc=document.getElementById('gridCol'); if(!gc)return; gc.innerHTML='';
   CATEGORIES.forEach(function(cat,i){
-    var cover=cat.cover?('photo '+cat.cover):(cat.grad||'c3');
+    var cover=cat.cover;
+    if(!cover){cat.types.some(function(t){if(t.designs.length){cover=t.designs[0].imgs[0];return true;}return false;});}
+    var frameCls='frame', frameStyle='';
+    if(cover){if(_isImgClass(cover)){frameCls='frame photo '+cover;}else{frameCls='frame photo';frameStyle=' style="background-image:url('+cover+')"';}}
+    else{frameCls='frame '+(cat.grad||'c3');}
     var idx=('0'+(i+1)).slice(-2);
     var card=document.createElement('div'); card.className='col';
     card.onclick=(function(k){return function(){openCollection(k);};})(cat.key);
-    card.innerHTML='<div class="frame '+cover+'"><div class="sheen"></div></div>'+
+    card.innerHTML='<div class="'+frameCls+'"'+frameStyle+'><div class="sheen"></div></div>'+
       '<div class="meta"><h3>'+cat.name+'</h3><span class="idx">'+idx+'</span></div>'+
       '<p>'+cat.blurb+'</p>';
     gc.appendChild(card);
@@ -754,7 +763,7 @@ function showProjects(kind,btn){
 }
 function closeLb(){document.getElementById('lb').classList.remove('on');}
 document.getElementById('lb').addEventListener('click',function(e){if(e.target.id==='lb')closeLb();});
-let REAL_SWATCHES=[{code:'310',img:'/images/swatch-310.jpg'}];
+let REAL_SWATCHES=[{code:'310',img:'/images/swatch-310.jpg',color:'Green'}];
 const FINISHES=['Natural wood','Walnut','Black','White lacquer','Gold-tipped legs'];
 const ADDONS=['Extra scatter cushions','Storage drawers','Nailhead trim','Contrast piping'];
 var sel={fabrics:[],finish:null,addons:[]};var cart=[];
@@ -786,9 +795,24 @@ function rmCompare(code){var i=sel.fabrics.indexOf(code);if(i>-1)sel.fabrics.spl
 function markSw(){var sg=document.getElementById('swgrid');Array.prototype.forEach.call(sg.children,function(x){x.classList.toggle('on',sel.fabrics.indexOf(x.dataset.code)>-1);});}
 function clearCompare(){var main=document.getElementById('lbMain');Array.prototype.forEach.call(main.querySelectorAll('.lb-cmp'),function(c){main.removeChild(c);});sel.fabrics=[];}
 function renderCfg(){
-  var sg=document.getElementById('swgrid');sg.innerHTML='';
-  REAL_SWATCHES.forEach(function(s){var d=document.createElement('div');d.className='swg';d.dataset.code=s.code;d.style.backgroundImage='url('+s.img+')';d.title=s.code;
-    d.onclick=function(){if(sel.fabrics.indexOf(s.code)>-1){rmCompare(s.code);}else{addCompare(s);}};sg.appendChild(d);});
+  var sc=document.getElementById('swColors'), sg=document.getElementById('swgrid');
+  sc.innerHTML=''; sg.innerHTML='';
+  var colors=[]; REAL_SWATCHES.forEach(function(s){var c=s.color||'Other'; if(colors.indexOf(c)<0)colors.push(c);});
+  function drawGrid(color){
+    sg.innerHTML='';
+    REAL_SWATCHES.filter(function(s){return (s.color||'Other')===color;}).forEach(function(s){
+      var d=document.createElement('div');d.className='swg';d.dataset.code=s.code;d.style.backgroundImage='url('+s.img+')';d.title=s.code;
+      d.onclick=function(){if(sel.fabrics.indexOf(s.code)>-1){rmCompare(s.code);}else{addCompare(s);}};
+      sg.appendChild(d);
+    });
+    markSw();
+  }
+  colors.forEach(function(col,i){
+    var chip=document.createElement('div');chip.className='swcolor'+(i===0?' on':'');chip.textContent=col;
+    chip.onclick=function(){Array.prototype.forEach.call(sc.children,function(x){x.classList.remove('on');});chip.classList.add('on');drawGrid(col);};
+    sc.appendChild(chip);
+  });
+  if(colors.length)drawGrid(colors[0]);
   var fi=document.getElementById('finishes');fi.innerHTML='';
   FINISHES.forEach(function(x){var c=document.createElement('div');c.className='chip2';c.textContent=x;c.onclick=function(){sel.finish=(sel.finish===x?null:x);Array.prototype.forEach.call(fi.children,function(y){y.classList.remove('on');});if(sel.finish)c.classList.add('on');};fi.appendChild(c);});
   var ad=document.getElementById('addons');ad.innerHTML='';
@@ -830,7 +854,7 @@ showProjects('Residential');
     .then(function(r){return r.ok?r.json():null;})
     .then(function(d){
       if(!d||!d.items||!d.items.length)return;
-      REAL_SWATCHES=d.items.filter(function(s){return s&&s.code&&s.photo;}).map(function(s){return {code:s.code,img:s.photo};});
+      REAL_SWATCHES=d.items.filter(function(s){return s&&s.code&&s.photo;}).map(function(s){return {code:s.code,img:s.photo,color:s.color||'Other'};});
       if(REAL_SWATCHES.length && document.getElementById('lb').classList.contains('on')){renderCfg();}
     }).catch(function(){});
   /* Products (append CMS products into categories/types) */
