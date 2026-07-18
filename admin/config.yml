@@ -32,21 +32,47 @@ collections:
       - name: "products_list"
         label: "All products"
         file: "content/data/products.json"
-        description: "Add products here. New products appear inside their collection on the live site (existing built-in pieces stay as they are)."
+        description: "Add products here. Each product appears under its Category and Type in Collections on the live site."
         fields:
           - name: "items"
             label: "Products"
             label_singular: "Product"
             widget: "list"
-            summary: "{{fields.title}} — {{fields.collection}}"
+            summary: "{{fields.title}} — {{fields.category}} / {{fields.type}}"
             fields:
-              - { name: "title", label: "Product name", widget: "string" }
-              - name: "collection"
-                label: "Collection"
+              - { name: "title", label: "Product / design name (e.g. Milano Sofa)", widget: "string" }
+              - name: "category"
+                label: "Category"
                 widget: "select"
-                options: ["Sofas & Sectionals","Upholstered Beds","Modular Cabinets","Dining","Accent Chairs","Full-Home Projects"]
+                options: ["Living Room","Bedroom","Dining","Modular Cabinets","Mattresses","Curtains & Blinds","Commercial & Custom"]
+              - name: "type"
+                label: "Type / sub-group (e.g. Sofas, Beds, Dining Chairs)"
+                widget: "string"
+                hint: "Living Room: Sofas, Sectionals, Accent Chairs, Center Tables, TV Consoles · Bedroom: Beds, Nightstands, Dressers, Wardrobes · Dining: Dining Tables, Dining Chairs, Buffets & Sideboards · Modular Cabinets: Kitchen/Storage/Display Cabinets · Mattresses: Foam/Spring · Curtains & Blinds: Curtains/Blinds/Roman Shades · Commercial & Custom: Office & Commercial/Full-Home Projects/Custom Pieces"
               - { name: "spec", label: "Short description (fabric / finish / style)", widget: "text" }
               - { name: "photos", label: "Photos (add multiple angles)", widget: "image", multiple: true }
+
+  # ---------- GALLERY PROJECTS (single file -> content/data/projects.json) ----------
+  - name: "projects"
+    label: "Gallery Projects"
+    files:
+      - name: "projects_list"
+        label: "All projects"
+        file: "content/data/projects.json"
+        description: "Add photos of delivered projects. They appear under the Gallery's Residential or Commercial tab on the live site."
+        fields:
+          - name: "items"
+            label: "Projects"
+            label_singular: "Project"
+            widget: "list"
+            summary: "{{fields.title}} ({{fields.kind}})"
+            fields:
+              - { name: "title", label: "Project name / location (optional)", widget: "string", required: false }
+              - name: "kind"
+                label: "Project type"
+                widget: "select"
+                options: ["Residential","Commercial"]
+              - { name: "photos", label: "Photos", widget: "image", multiple: true }
 
   # ---------- HOMEPAGE TEXTS ----------
   - name: "homepage"

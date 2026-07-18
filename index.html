@@ -310,6 +310,19 @@
   .names.two span{font-family:'Jost';font-weight:400;font-size:.83rem;letter-spacing:.02em;white-space:nowrap;color:var(--ink)}
   .names-sub{text-align:center;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--rose-deep);margin:46px 0 20px;font-family:'Jost'}
   @media(max-width:560px){.names{grid-template-columns:1fr 1fr;gap:11px 14px}.names span{font-size:.97rem}.names.two{grid-template-columns:1fr;max-width:none;gap:9px}.names.two span{font-size:.8rem}}
+  /* NEW: category overlay grouped by type */
+  .cov-grid{display:block}
+  .cov-type{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.7rem;font-weight:400;color:var(--ink);margin:38px 0 20px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+  .cov-type:first-child{margin-top:0}
+  .cov-typegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px 26px;margin-bottom:8px}
+  @media(max-width:900px){.cov-typegrid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.cov-typegrid{grid-template-columns:1fr}}
+  /* NEW: gallery project tabs */
+  .gtabs{display:flex;justify-content:center;gap:14px;margin:0 auto 40px;flex-wrap:wrap}
+  .gtab{font-family:'Jost',sans-serif;font-weight:400;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;padding:12px 26px;border-radius:100px;border:1px solid var(--line);background:transparent;color:var(--soft);cursor:pointer;transition:.2s}
+  .gtab:hover{color:var(--ink);border-color:var(--ink)}
+  .gtab.on{background:var(--ink);color:var(--porcelain);border-color:var(--ink)}
+  .proj-empty{text-align:center;color:var(--soft);font-family:'Jost';font-weight:400;font-size:1rem;padding:50px 20px;border:1px dashed var(--line);border-radius:8px}
 </style>
 </head>
 <body>
@@ -332,7 +345,7 @@
 <section class="hero" id="top">
   <div class="wrap hero-in">
     <div>
-      <span class="eyebrow">Custom Upholstered Furniture · Since 2010</span>
+      <span class="eyebrow">Custom Upholstered Furniture</span>
       <h1>Simple. Fine.<br><em>Elegant.</em></h1>
       <p class="lead">Modern &amp; contemporary furniture, custom-made to your space — the sofa, the bed, the piece you'll love looking at every day.</p>
       <div class="hero-cta">
@@ -366,14 +379,7 @@
       <h2>Made for the way you live</h2>
       <p>Every piece is customizable — your size, your fabric, your finish. Browse, then request a quote.</p>
     </div>
-    <div class="grid-col">
-      <div class="col" onclick="openCollection('sofas')"><div class="frame c1 photo imgC1"><div class="sheen"></div></div><div class="meta"><h3>Sofas &amp; Sectionals</h3><span class="idx">01</span></div><p>Cloud sofas, L-types, sofa beds — any fabric, any size.</p></div>
-      <div class="col" onclick="openCollection('beds')"><div class="frame c2 photo imgC2"><div class="sheen"></div></div><div class="meta"><h3>Upholstered Beds</h3><span class="idx">02</span></div><p>Tufted headboards and bed frames, made to spec.</p></div>
-      <div class="col" onclick="openCollection('cabinets')"><div class="frame c3"><div class="sheen"></div></div><div class="meta"><h3>Modular Cabinets</h3><span class="idx">03</span></div><p>Storage and built-ins designed to fit exactly.</p></div>
-      <div class="col" onclick="openCollection('dining')"><div class="frame c4 photo imgC4"><div class="sheen"></div></div><div class="meta"><h3>Dining</h3><span class="idx">04</span></div><p>Tables and chairs sized for family or venue.</p></div>
-      <div class="col" onclick="openCollection('accent')"><div class="frame c5 photo imgC5"><div class="sheen"></div></div><div class="meta"><h3>Accent Chairs</h3><span class="idx">05</span></div><p>Statement seating to finish a room beautifully.</p></div>
-      <div class="col" onclick="openCollection('fullhome')"><div class="frame c6 photo imgC6"><div class="sheen"></div></div><div class="meta"><h3>Full-Home Projects</h3><span class="idx">06</span></div><p>Complete, coordinated interiors for your space.</p></div>
-    </div>
+    <div class="grid-col" id="gridCol"></div>
   </div>
 </section>
 
@@ -420,21 +426,15 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Gallery</span>
-      <h2>A closer look</h2>
-      <p>A selection of our custom-made pieces — sofas, beds, chairs, and more, crafted to order.</p>
+      <h2>Our projects</h2>
+      <p>Real pieces delivered and styled in homes and businesses across the country.</p>
     </div>
-    <div class="gallery">
-      <div class="gitem ga g-tall photo imgG1"><span class="lbl">Tufted upholstered bed</span></div>
-      <div class="gitem gb g-wide photo imgG2"><span class="lbl">Scalloped daybed</span></div>
-      <div class="gitem gc photo imgG3"><span class="lbl">Velvet dining chairs</span></div>
-      <div class="gitem gd photo imgG4"><span class="lbl">Wood-frame armchairs</span></div>
-      <div class="gitem ge g-wide photo imgG5"><span class="lbl">Round lounge chair</span></div>
-      <div class="gitem gb photo imgG6"><span class="lbl">Accent armchair</span></div>
-      <div class="gitem gc photo imgG7"><span class="lbl">Ornate accent chair</span></div>
-      <div class="gitem gd photo imgG8"><span class="lbl">Chevron headboard bed</span></div>
-      <div class="gitem ge photo imgG9"><span class="lbl">Channel-tufted bed</span></div>
-      <div class="gitem ga photo imgG10"><span class="lbl">Seashell accent chairs</span></div>
+    <div class="gtabs">
+      <button class="gtab on" data-kind="Residential" onclick="showProjects('Residential',this)">Residential Projects</button>
+      <button class="gtab" data-kind="Commercial" onclick="showProjects('Commercial',this)">Commercial Projects</button>
     </div>
+    <div class="gallery" id="projGallery"></div>
+    <div class="proj-empty" id="projEmpty" style="display:none"></div>
   </div>
 </section>
 
@@ -639,61 +639,118 @@
   </div>
 </div>
 <script>
-const COLLECTIONS={
- sofas:{name:'Sofas & Sectionals',items:[
-   {title:'Cloud Sofa',spec:'Curved boucl\u00e9 sofa with deep channel tufting and plush scatter cushions. Custom-made \u2014 any length, fabric, or finish.',imgs:['imgC1','imgB1','imgB2','imgB4','imgB3']},
-   {title:'Signature Living Set',spec:'Channel-tufted sofa with matching armchairs and ottoman, gold accents. Custom-made in your fabric.',imgs:['imgC6']},
-   {title:'Round Lounge Chair',spec:'Curved velvet lounge with ottoman base. A soft, sculptural statement piece.',imgs:['imgG5']}
+const CATEGORIES=[
+ {key:'living-room',name:'Living Room',cover:'imgC1',blurb:'Sofas, sectionals, accent chairs, and centre tables — the heart of your home.',types:[
+   {name:'Sofas',designs:[
+     {title:'Cloud Sofa',spec:'Curved bouclé sofa with deep channel tufting and plush scatter cushions. Custom-made — any length, fabric, or finish.',imgs:['imgC1','imgB1','imgB2','imgB4','imgB3']},
+     {title:'Signature Living Set',spec:'Channel-tufted sofa with matching armchairs and ottoman, gold accents. Custom-made in your fabric.',imgs:['imgC6']}
+   ]},
+   {name:'Sectionals',designs:[]},
+   {name:'Accent Chairs',designs:[
+     {title:'Belle Armchair',spec:'Hand-carved white lacquer frame, soft grey linen, classic French silhouette. Custom-made in any fabric or finish.',imgs:['imgC5','imgA1','imgA3']},
+     {title:'Round Lounge Chair',spec:'Curved velvet lounge with ottoman base. A soft, sculptural statement piece.',imgs:['imgG5']},
+     {title:'Seashell Chair',spec:'Scalloped shell back in velvet with slim gold legs.',imgs:['imgG10']},
+     {title:'Wood-Frame Armchair',spec:'Curved wood frame with cream linen cushions.',imgs:['imgG4']},
+     {title:'Accent Armchair',spec:'Tailored accent armchair with a tall, elegant back.',imgs:['imgG6']},
+     {title:'Ornate Armchair',spec:'Hand-carved white & gold frame, grey linen — a true statement piece.',imgs:['imgG7']}
+   ]},
+   {name:'Center Tables',designs:[]},
+   {name:'TV Consoles',designs:[]}
  ]},
- beds:{name:'Upholstered Beds',items:[
-   {title:'Riviera Bed',spec:'Vertical channel tufting, gold trim, storage drawers. Custom-made \u2014 any size or fabric.',imgs:['imgC2']},
-   {title:'Tufted Wingback Bed',spec:'Diamond button tufting with a soft wingback headboard.',imgs:['imgG1']},
-   {title:'Scalloped Daybed',spec:'Playful scalloped headboard \u2014 perfect for a nursery or accent room.',imgs:['imgG2']},
-   {title:'Chevron Headboard Bed',spec:'Full-height chevron upholstered headboard wall with platform base.',imgs:['imgG8']},
-   {title:'Channel-Tufted Bed',spec:'Grey velvet with vertical channel headboard and tufted rail frame.',imgs:['imgG9']}
+ {key:'bedroom',name:'Bedroom',cover:'imgC2',blurb:'Upholstered beds, nightstands, and storage — built for rest.',types:[
+   {name:'Beds',designs:[
+     {title:'Riviera Bed',spec:'Vertical channel tufting, gold trim, storage drawers. Custom-made — any size or fabric.',imgs:['imgC2']},
+     {title:'Tufted Wingback Bed',spec:'Diamond button tufting with a soft wingback headboard.',imgs:['imgG1']},
+     {title:'Scalloped Daybed',spec:'Playful scalloped headboard — perfect for a nursery or accent room.',imgs:['imgG2']},
+     {title:'Chevron Headboard Bed',spec:'Full-height chevron upholstered headboard wall with platform base.',imgs:['imgG8']},
+     {title:'Channel-Tufted Bed',spec:'Grey velvet with vertical channel headboard and tufted rail frame.',imgs:['imgG9']}
+   ]},
+   {name:'Nightstands',designs:[]},
+   {name:'Dressers',designs:[]},
+   {name:'Wardrobes',designs:[]}
  ]},
- cabinets:{name:'Modular Cabinets',items:[]},
- dining:{name:'Dining',items:[
-   {title:'Boucl\u00e9 Dining Chairs',spec:'Curved open-back dining chairs in cream boucl\u00e9. Sold as a set, custom count.',imgs:['imgC4']},
-   {title:'Velvet Dining Chairs',spec:'Curved-back velvet dining chairs with tapered wood legs.',imgs:['imgG3']}
+ {key:'dining',name:'Dining',cover:'imgC4',blurb:'Tables and chairs sized for family dinners or full venues.',types:[
+   {name:'Dining Tables',designs:[]},
+   {name:'Dining Chairs',designs:[
+     {title:'Bouclé Dining Chairs',spec:'Curved open-back dining chairs in cream bouclé. Sold as a set, custom count.',imgs:['imgC4']},
+     {title:'Velvet Dining Chairs',spec:'Curved-back velvet dining chairs with tapered wood legs.',imgs:['imgG3']}
+   ]},
+   {name:'Buffets & Sideboards',designs:[]}
  ]},
- accent:{name:'Accent Chairs',items:[
-   {title:'Belle Armchair',spec:'Hand-carved white lacquer frame, soft grey linen, classic French silhouette. Custom-made in any fabric or finish.',imgs:['imgC5','imgA1','imgA3']},
-   {title:'Seashell Chair',spec:'Scalloped shell back in velvet with slim gold legs.',imgs:['imgG10']},
-   {title:'Wood-Frame Armchair',spec:'Curved wood frame with cream linen cushions.',imgs:['imgG4']},
-   {title:'Accent Armchair',spec:'Tailored accent armchair with a tall, elegant back.',imgs:['imgG6']},
-   {title:'Ornate Armchair',spec:'Hand-carved white & gold frame, grey linen \u2014 a true statement piece.',imgs:['imgG7']}
+ {key:'modular-cabinets',name:'Modular Cabinets',cover:'',grad:'c3',blurb:'Storage and built-ins designed to fit your space exactly.',types:[
+   {name:'Kitchen Cabinets',designs:[]},{name:'Storage Cabinets',designs:[]},{name:'Display Cabinets',designs:[]}
  ]},
- fullhome:{name:'Full-Home Projects',items:[
-   {title:'Signature Living Set',spec:'Complete, coordinated living room \u2014 sofa, armchairs, and centre table, custom-made.',imgs:['imgC6']}
+ {key:'mattresses',name:'Mattresses',cover:'',grad:'c5',blurb:'Foam and spring mattresses, made to your comfort.',types:[
+   {name:'Foam Mattresses',designs:[]},{name:'Spring Mattresses',designs:[]}
+ ]},
+ {key:'curtains-blinds',name:'Curtains & Blinds',cover:'',grad:'c2',blurb:'Curtains, blinds, and shades to finish every window.',types:[
+   {name:'Curtains',designs:[]},{name:'Blinds',designs:[]},{name:'Roman Shades',designs:[]}
+ ]},
+ {key:'commercial-custom',name:'Commercial & Custom',cover:'imgC6',blurb:'Full-home projects and bespoke pieces for businesses and one-of-a-kind requests.',types:[
+   {name:'Office & Commercial',designs:[]},{name:'Full-Home Projects',designs:[]},{name:'Custom Pieces',designs:[]}
  ]}
-};
+];
+function _catByName(n){var s=(n||'').toLowerCase().trim();for(var i=0;i<CATEGORIES.length;i++){if(CATEGORIES[i].name.toLowerCase()===s)return CATEGORIES[i];}return null;}
+function renderCategoryCards(){
+  var gc=document.getElementById('gridCol'); if(!gc)return; gc.innerHTML='';
+  CATEGORIES.forEach(function(cat,i){
+    var cover=cat.cover?('photo '+cat.cover):(cat.grad||'c3');
+    var idx=('0'+(i+1)).slice(-2);
+    var card=document.createElement('div'); card.className='col';
+    card.onclick=(function(k){return function(){openCollection(k);};})(cat.key);
+    card.innerHTML='<div class="frame '+cover+'"><div class="sheen"></div></div>'+
+      '<div class="meta"><h3>'+cat.name+'</h3><span class="idx">'+idx+'</span></div>'+
+      '<p>'+cat.blurb+'</p>';
+    gc.appendChild(card);
+  });
+}
 
 function _isImgClass(r){return typeof r==='string' && /^img[A-Za-z0-9]+$/.test(r);}
 function _phMarkup(ref){return _isImgClass(ref)?'<div class="ph '+ref+'"></div>':'<div class="ph" style="background-image:url('+ref+')"></div>';}
 function openCollection(key){
-  var col=COLLECTIONS[key]; if(!col)return;
-  document.getElementById('covTitle').textContent=col.name;
-  var g=document.getElementById('covGrid'); g.innerHTML='';
-  if(!col.items.length){g.innerHTML='<div class="cov-empty">New '+col.name.toLowerCase()+' pieces coming soon \u2014 message us to request a custom design.</div>';}
-  col.items.forEach(function(it,i){
-    var card=document.createElement('div'); card.className='item';
-    card.onclick=function(){openItem(key,i);};
-    card.innerHTML=_phMarkup(it.imgs[0])+'<div class="cap"><h3>'+it.title+'</h3><span class="a">View '+(it.imgs.length>1?it.imgs.length+' views':'details')+' \u2192</span></div>';
-    g.appendChild(card);
+  var cat=null; for(var i=0;i<CATEGORIES.length;i++){if(CATEGORIES[i].key===key)cat=CATEGORIES[i];}
+  if(!cat)return;
+  document.getElementById('covTitle').textContent=cat.name;
+  var g=document.getElementById('covGrid'); g.innerHTML=''; var any=false;
+  cat.types.forEach(function(type){
+    if(!type.designs.length)return; any=true;
+    var h=document.createElement('div'); h.className='cov-type'; h.textContent=type.name; g.appendChild(h);
+    var grid=document.createElement('div'); grid.className='cov-typegrid';
+    type.designs.forEach(function(d){
+      var card=document.createElement('div'); card.className='item';
+      card.onclick=(function(dd,eye){return function(){openDesign(dd,eye);};})(d, cat.name+' · '+type.name);
+      card.innerHTML=_phMarkup(d.imgs[0])+'<div class="cap"><h3>'+d.title+'</h3><span class="a">View '+(d.imgs.length>1?d.imgs.length+' views':'details')+' →</span></div>';
+      grid.appendChild(card);
+    });
+    g.appendChild(grid);
   });
+  if(!any){g.innerHTML='<div class="cov-empty">New '+cat.name.toLowerCase()+' pieces coming soon — message us to request a custom design.</div>';}
   document.getElementById('cov').classList.add('on'); document.body.style.overflow='hidden';
 }
 function closeCov(){document.getElementById('cov').classList.remove('on'); document.body.style.overflow='';}
-function openItem(key,i){
-  var it=COLLECTIONS[key].items[i], lb=document.getElementById('lb'), th=document.getElementById('lbThumbs'), main=document.getElementById('lbMain');
-  document.getElementById('lbEye').textContent=COLLECTIONS[key].name;
-  document.getElementById('lbTitle').textContent=it.title;
-  document.getElementById('lbSpec').textContent=it.spec; th.innerHTML='';
+function openDesign(d,eyebrow){
+  var lb=document.getElementById('lb'), th=document.getElementById('lbThumbs'), main=document.getElementById('lbMain');
+  document.getElementById('lbEye').textContent=eyebrow;
+  document.getElementById('lbTitle').textContent=d.title;
+  document.getElementById('lbSpec').textContent=d.spec; th.innerHTML='';
   function setMain(c){main.className=main.className.split(' ').filter(function(k){return k.indexOf('img')!==0;}).join(' ');main.style.backgroundImage='';if(_isImgClass(c)){main.classList.add(c);}else{main.style.backgroundImage='url('+c+')';}Array.prototype.forEach.call(th.children,function(x){x.classList.toggle('on',x.dataset.c===c);});}
-  it.imgs.forEach(function(c){var t=document.createElement('div');t.className='lb-thumb'+(_isImgClass(c)?' '+c:'');if(!_isImgClass(c))t.style.backgroundImage='url('+c+')';t.dataset.c=c;t.onclick=function(){setMain(c);};th.appendChild(t);});
-  th.style.display=it.imgs.length>1?'flex':'none';
-  setMain(it.imgs[0]); _curItem={title:it.title,eye:COLLECTIONS[key].name}; resetCfg(); lb.classList.add('on');
+  d.imgs.forEach(function(c){var t=document.createElement('div');t.className='lb-thumb'+(_isImgClass(c)?' '+c:'');if(!_isImgClass(c))t.style.backgroundImage='url('+c+')';t.dataset.c=c;t.onclick=function(){setMain(c);};th.appendChild(t);});
+  th.style.display=d.imgs.length>1?'flex':'none';
+  setMain(d.imgs[0]); _curItem={title:d.title,eye:eyebrow}; resetCfg(); lb.classList.add('on');
+}
+var PROJECTS=[];
+function showProjects(kind,btn){
+  var g=document.getElementById('projGallery'), e=document.getElementById('projEmpty'); if(!g||!e)return;
+  if(btn){Array.prototype.forEach.call(document.querySelectorAll('.gtab'),function(b){b.classList.remove('on');});btn.classList.add('on');}
+  var list=PROJECTS.filter(function(p){return (p.kind||'')===kind;});
+  g.innerHTML='';
+  if(!list.length){e.style.display='block';e.textContent=kind+' projects coming soon — we’ll add photos of delivered work here.';g.style.display='none';return;}
+  e.style.display='none';g.style.display='grid';
+  list.forEach(function(p){(p.photos||[]).filter(Boolean).forEach(function(src){
+    var it=document.createElement('div');it.className='gitem photo';it.style.backgroundImage='url('+src+')';
+    if(p.title){var l=document.createElement('span');l.className='lbl';l.textContent=p.title;it.appendChild(l);}
+    g.appendChild(it);
+  });});
 }
 function closeLb(){document.getElementById('lb').classList.remove('on');}
 document.getElementById('lb').addEventListener('click',function(e){if(e.target.id==='lb')closeLb();});
@@ -750,6 +807,8 @@ function requestAll(){if(!cart.length){alert('Your quote cart is empty.');return
   var txt='QUOTE REQUEST \u2014 '+cart.length+' piece(s):\n\n'+cart.map(function(it,i){return (i+1)+') '+it.title+' ('+it.coll+')\n   Fabric option(s): '+it.fabric+' | Finish: '+it.finish+(it.addons.length?' | Add-ons: '+it.addons.join(', '):'')+(it.notes?'\n   Notes: '+it.notes:'');}).join('\n\n');
   var d=document.getElementById('details');if(d)d.value=txt;closeCart();var q=document.getElementById('quote');if(q)q.scrollIntoView({behavior:'smooth'});}
 updateCart();
+renderCategoryCards();
+showProjects('Residential');
 
 
 /* ===== CMS CONTENT LOADERS (Decap CMS -> live site) ===== */
@@ -774,18 +833,28 @@ updateCart();
       REAL_SWATCHES=d.items.filter(function(s){return s&&s.code&&s.photo;}).map(function(s){return {code:s.code,img:s.photo};});
       if(REAL_SWATCHES.length && document.getElementById('lb').classList.contains('on')){renderCfg();}
     }).catch(function(){});
-  /* Products (append CMS products into existing collections) */
-  var COLLMAP={"Sofas & Sectionals":"sofas","Upholstered Beds":"beds","Modular Cabinets":"cabinets","Dining":"dining","Accent Chairs":"accent","Full-Home Projects":"fullhome"};
+  /* Products (append CMS products into categories/types) */
   fetch('/content/data/products.json',{cache:'no-store'})
     .then(function(r){return r.ok?r.json():null;})
     .then(function(d){
       if(!d||!d.items||!d.items.length)return;
       d.items.forEach(function(p){
-        var key=COLLMAP[p.collection]; if(!key||!COLLECTIONS[key])return;
-        var imgs=(p.photos&&p.photos.length)?p.photos.filter(Boolean):[];
-        if(!imgs.length)return;
-        COLLECTIONS[key].items.push({title:p.title||'Untitled',spec:p.spec||'',imgs:imgs});
+        var cat=_catByName(p.category); if(!cat)return;
+        var imgs=(p.photos&&p.photos.length)?p.photos.filter(Boolean):[]; if(!imgs.length)return;
+        var tname=(p.type||'Other').trim(), type=null;
+        for(var i=0;i<cat.types.length;i++){if(cat.types[i].name.toLowerCase()===tname.toLowerCase())type=cat.types[i];}
+        if(!type){type={name:tname,designs:[]};cat.types.push(type);}
+        type.designs.push({title:p.title||'Untitled',spec:p.spec||'',imgs:imgs});
       });
+      renderCategoryCards();
+    }).catch(function(){});
+  /* Projects (gallery: Residential / Commercial) */
+  fetch('/content/data/projects.json',{cache:'no-store'})
+    .then(function(r){return r.ok?r.json():null;})
+    .then(function(d){
+      if(!d||!d.items)return;
+      PROJECTS=d.items.map(function(p){return {kind:p.kind,title:p.title,photos:p.photos||[]};});
+      var active=document.querySelector('.gtab.on'); showProjects(active?active.dataset.kind:'Residential');
     }).catch(function(){});
 })();
 
