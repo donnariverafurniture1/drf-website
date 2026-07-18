@@ -327,6 +327,20 @@
   .gtab:hover{color:var(--ink);border-color:var(--ink)}
   .gtab.on{background:var(--ink);color:var(--porcelain);border-color:var(--ink)}
   .proj-empty{text-align:center;color:var(--soft);font-family:'Jost';font-weight:400;font-size:1rem;padding:50px 20px;border:1px dashed var(--line);border-radius:8px}
+  /* PAYMENT */
+  .pay-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:1000px;margin:0 auto}
+  .pay-card{background:#fff;border:1px solid rgba(33,27,22,.08);border-radius:10px;padding:34px 34px 30px;box-shadow:0 24px 52px -40px rgba(33,27,22,.35)}
+  .pay-card h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:1.6rem;margin-bottom:20px}
+  .pay-terms{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .pay-terms li{font-family:'Jost';font-size:.95rem;color:var(--ink);line-height:1.6}
+  .pay-terms .b{color:var(--rose-deep);margin-right:4px}
+  .pay-list{display:flex;flex-direction:column;gap:14px}
+  .pay-item{display:flex;flex-direction:column;gap:3px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+  .pay-item:last-child{border-bottom:none;padding-bottom:0}
+  .pay-item .pm{font-family:'Jost';font-weight:500;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink)}
+  .pay-item .pd{font-family:'Jost';font-size:.86rem;color:var(--soft);line-height:1.5}
+  .pay-note{font-family:'Jost';font-size:.78rem;color:var(--soft);margin-top:18px;padding-top:14px;border-top:1px solid var(--line);line-height:1.6}
+  @media(max-width:760px){.pay-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -338,6 +352,7 @@
       <a href="#collections">Collections</a>
       <a href="#process">Process</a>
       <a href="#gallery">Gallery</a>
+      <a href="#payment">Payment</a>
       <a href="#contact">Contact</a>
     </nav>
     <a href="#quote" class="btn btn-line nav-cta">Request a quote</a>
@@ -554,6 +569,37 @@
   </div>
 </section>
 
+<section class="pad" id="payment">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Payment</span>
+      <h2>Simple, secure payment</h2>
+      <p>Flexible options and clear terms — exact account details are shared privately once your quote is approved.</p>
+    </div>
+    <div class="pay-grid">
+      <div class="pay-card">
+        <h3>Terms</h3>
+        <ul class="pay-terms">
+          <li><span class="b">—</span> <b>60% downpayment</b> confirms your order and begins production.</li>
+          <li><span class="b">—</span> The <b>balance is settled upon delivery.</b></li>
+          <li><span class="b">—</span> <b>Pay in full</b> and enjoy a <b>discount.</b></li>
+        </ul>
+        <p class="pay-note">Credit-card installment plans aren't eligible for the full-payment discount, as they carry merchant charges — which we never add on to you as a fee.</p>
+      </div>
+      <div class="pay-card">
+        <h3>Ways to pay</h3>
+        <div class="pay-list">
+          <div class="pay-item"><span class="pm">Bank transfer</span><span class="pd">BPI — corporate receiving account</span></div>
+          <div class="pay-item"><span class="pm">QR Ph</span><span class="pd">RCBC — scan to pay</span></div>
+          <div class="pay-item"><span class="pm">Tap to Phone</span><span class="pd">RCBC — straight card payment</span></div>
+          <div class="pay-item"><span class="pm">Credit card</span><span class="pd">Metrobank terminal — installment for Metrobank cardholders, straight for other banks</span></div>
+        </div>
+        <p class="pay-note">Account details are provided once your quote is approved.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="pad" id="contact">
   <div class="wrap">
     <div class="sec-head">
@@ -589,6 +635,7 @@
         <a href="#collections">Collections</a>
         <a href="#process">Process</a>
         <a href="#gallery">Gallery</a>
+        <a href="#payment">Payment</a>
         <a href="#quote">Request a quote</a>
         <a href="#contact">Contact</a>
       </nav>
