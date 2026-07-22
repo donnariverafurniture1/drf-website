@@ -54,7 +54,13 @@ collections:
                 widget: "string"
                 hint: "Living Room: Sofas, Sectionals, Accent Chairs, Center Tables, TV Consoles · Bedroom: Beds, Nightstands, Dressers, Wardrobes · Dining: Dining Tables, Dining Chairs, Buffets & Sideboards · Modular Cabinets: Kitchen/Storage/Display Cabinets · Mattresses: Foam/Spring · Curtains & Blinds: Curtains/Blinds/Roman Shades · Commercial & Custom: Office & Commercial/Full-Home Projects/Custom Pieces"
               - { name: "spec", label: "Short description (fabric / finish / style)", widget: "text" }
-              - { name: "photos", label: "Photos (add multiple angles)", widget: "image", multiple: true }
+              - name: "photos"
+                label: "Photos"
+                label_singular: "Photo"
+                widget: "list"
+                summary: "Photo {{index}}"
+                field: { name: "image", label: "Photo", widget: "image" }
+                hint: "Click 'Add Photo' below for each picture — one upload per click, but you can click Add Photo as many times as you need."
 
   # ---------- GALLERY PROJECTS (single file -> content/data/projects.json) ----------
   - name: "projects"
@@ -76,7 +82,13 @@ collections:
                 label: "Project type"
                 widget: "select"
                 options: ["Residential","Commercial"]
-              - { name: "photos", label: "Photos", widget: "image", multiple: true }
+              - name: "photos"
+                label: "Photos"
+                label_singular: "Photo"
+                widget: "list"
+                summary: "Photo {{index}}"
+                field: { name: "image", label: "Photo", widget: "image" }
+                hint: "Click 'Add Photo' below for each picture — one upload per click, but you can click Add Photo as many times as you need. Curtains first, blinds last."
 
   # ---------- HOMEPAGE TEXTS ----------
   - name: "homepage"
