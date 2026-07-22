@@ -15,10 +15,25 @@ collections:
         file: "content/data/swatches.json"
         description: "Add every fabric swatch here. These appear in the mood board / configurator on the live site."
         fields:
+          - name: "bulk"
+            label: "Bulk upload (fast) — pick a colour, then drop many swatch photos at once"
+            label_singular: "Bulk colour batch"
+            widget: "list"
+            required: false
+            summary: "{{fields.color}}"
+            description: "The fastest way to add lots of swatches: add a colour batch, choose the colour, then drag & drop all photos of that colour together. Each swatch's code is taken from its file name (e.g. swatch-310.jpg shows as '310'). Use the detailed list below only when you want to set a specific code."
+            fields:
+              - name: "color"
+                label: "Colour group for this batch"
+                widget: "select"
+                options: ["Beige & Cream","White","Grey","Black & Charcoal","Brown & Tan","Blue","Green","Pink & Rose","Red & Maroon","Yellow & Gold","Purple","Orange","Multi & Pattern"]
+              - { name: "line", label: "Fabric line (e.g. Local, Premium)", widget: "string", required: false }
+              - { name: "photos", label: "Swatch photos (drop many at once)", widget: "image", multiple: true }
           - name: "items"
-            label: "Swatches"
+            label: "Swatches (detailed — one at a time)"
             label_singular: "Swatch"
             widget: "list"
+            required: false
             summary: "{{fields.code}}"
             fields:
               - { name: "code", label: "Swatch code / name (e.g. 310, Sofia 05)", widget: "string" }

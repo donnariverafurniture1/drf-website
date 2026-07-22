@@ -811,6 +811,13 @@ function showProjects(kind,btn){
 function closeLb(){document.getElementById('lb').classList.remove('on');}
 document.getElementById('lb').addEventListener('click',function(e){if(e.target.id==='lb')closeLb();});
 let REAL_SWATCHES=[{code:'310',img:'/images/swatch-310.jpg',color:'Green'}];
+function swatchCodeFromPath(p){
+  var f=String(p||'').split('/').pop().replace(/\.[a-z0-9]+$/i,'');
+  var m=f.match(/(\d{2,})(?!.*\d)/);
+  if(m)return m[1];
+  f=f.replace(/[_-]+/g,' ').trim();
+  return f?f.charAt(0).toUpperCase()+f.slice(1):'Swatch';
+}
 const FINISHES=['Natural wood','Walnut','Black','White lacquer','Gold-tipped legs'];
 const ADDONS=['Extra scatter cushions','Storage drawers','Nailhead trim','Contrast piping'];
 var sel={fabrics:[],finish:null,addons:[]};var cart=[];
@@ -900,9 +907,21 @@ showProjects('Residential');
   fetch('/content/data/swatches.json',{cache:'no-store'})
     .then(function(r){return r.ok?r.json():null;})
     .then(function(d){
-      if(!d||!d.items||!d.items.length)return;
-      REAL_SWATCHES=d.items.filter(function(s){return s&&s.code&&s.photo;}).map(function(s){return {code:s.code,img:s.photo,color:s.color||'Other'};});
-      if(REAL_SWATCHES.length && document.getElementById('lb').classList.contains('on')){renderCfg();}
+      if(!d)return;
+      var out=[];
+      (d.bulk||[]).forEach(function(b){
+        if(!b||!b.photos||!b.photos.length)return;
+        var col=b.color||'Other';
+        b.photos.filter(Boolean).forEach(function(p){
+          out.push({code:swatchCodeFromPath(p),img:p,color:col});
+        });
+      });
+      (d.items||[]).filter(function(s){return s&&s.code&&s.photo;}).forEach(function(s){
+        out.push({code:s.code,img:s.photo,color:s.color||'Other'});
+      });
+      if(!out.length)return;
+      REAL_SWATCHES=out;
+      if(document.getElementById('lb').classList.contains('on')){renderCfg();}
     }).catch(function(){});
   /* Products (append CMS products into categories/types) */
   fetch('/content/data/products.json',{cache:'no-store'})
