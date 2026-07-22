@@ -1,0 +1,124 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # ---------- SWATCHES (single file -> content/data/swatches.json) ----------
+  - name: "swatches"
+    label: "Fabric Swatches"
+    files:
+      - name: "swatches_list"
+        label: "All fabric swatches"
+        file: "content/data/swatches.json"
+        description: "Add every fabric swatch here. These appear in the mood board / configurator on the live site."
+        fields:
+          - name: "items"
+            label: "Swatches"
+            label_singular: "Swatch"
+            widget: "list"
+            summary: "{{fields.code}}"
+            fields:
+              - { name: "code", label: "Swatch code / name (e.g. 310, Sofia 05)", widget: "string" }
+              - name: "color"
+                label: "Colour group (swatches are grouped by this on the site)"
+                widget: "select"
+                options: ["Beige & Cream","White","Grey","Black & Charcoal","Brown & Tan","Blue","Green","Pink & Rose","Red & Maroon","Yellow & Gold","Purple","Orange","Multi & Pattern"]
+              - { name: "line", label: "Fabric line (e.g. Local, Premium)", widget: "string", required: false }
+              - { name: "photo", label: "Swatch photo", widget: "image" }
+
+  # ---------- PRODUCTS (single file -> content/data/products.json) ----------
+  - name: "products"
+    label: "Products"
+    files:
+      - name: "products_list"
+        label: "All products"
+        file: "content/data/products.json"
+        description: "Add products here. Each product appears under its Category and Type in Collections on the live site."
+        fields:
+          - name: "items"
+            label: "Products"
+            label_singular: "Product"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.category}} / {{fields.type}}"
+            fields:
+              - { name: "title", label: "Product / design name (e.g. Milano Sofa)", widget: "string" }
+              - name: "category"
+                label: "Category"
+                widget: "select"
+                options: ["Living Room","Bedroom","Dining","Modular Cabinets","Mattresses","Curtains & Blinds","Commercial & Custom"]
+              - name: "type"
+                label: "Type / sub-group (e.g. Sofas, Beds, Dining Chairs)"
+                widget: "string"
+                hint: "Living Room: Sofas, Sectionals, Accent Chairs, Center Tables, TV Consoles · Bedroom: Beds, Nightstands, Dressers, Wardrobes · Dining: Dining Tables, Dining Chairs, Buffets & Sideboards · Modular Cabinets: Kitchen/Storage/Display Cabinets · Mattresses: Foam/Spring · Curtains & Blinds: Curtains/Blinds/Roman Shades · Commercial & Custom: Office & Commercial/Full-Home Projects/Custom Pieces"
+              - { name: "spec", label: "Short description (fabric / finish / style)", widget: "text" }
+              - name: "photos"
+                label: "Photos"
+                label_singular: "Photo"
+                widget: "list"
+                summary: "Photo {{index}}"
+                field: { name: "image", label: "Photo", widget: "image" }
+                hint: "Click 'Add Photo' below for each picture — one upload per click, but you can click Add Photo as many times as you need."
+
+  # ---------- GALLERY PROJECTS (single file -> content/data/projects.json) ----------
+  - name: "projects"
+    label: "Gallery Projects"
+    files:
+      - name: "projects_list"
+        label: "All projects"
+        file: "content/data/projects.json"
+        description: "Add photos of delivered projects. They appear under the Gallery's Residential or Commercial tab on the live site."
+        fields:
+          - name: "items"
+            label: "Projects"
+            label_singular: "Project"
+            widget: "list"
+            summary: "{{fields.title}} ({{fields.kind}})"
+            fields:
+              - { name: "title", label: "Project name / location (optional)", widget: "string", required: false }
+              - name: "kind"
+                label: "Project type"
+                widget: "select"
+                options: ["Residential","Commercial"]
+              - name: "photos"
+                label: "Photos"
+                label_singular: "Photo"
+                widget: "list"
+                summary: "Photo {{index}}"
+                field: { name: "image", label: "Photo", widget: "image" }
+                hint: "Click 'Add Photo' below for each picture — one upload per click, but you can click Add Photo as many times as you need. Curtains first, blinds last."
+
+  # ---------- HOMEPAGE TEXTS ----------
+  - name: "homepage"
+    label: "Homepage Texts"
+    files:
+      - name: "hero"
+        label: "Hero"
+        file: "content/homepage/hero.md"
+        fields:
+          - { name: "eyebrow", label: "Small line above title", widget: "string" }
+          - { name: "title", label: "Main headline", widget: "string" }
+          - { name: "subtitle", label: "Sub-text", widget: "text" }
+
+  # ---------- TRUSTED BY / CLIENTS (single file -> content/data/clients.json) ----------
+  - name: "clients"
+    label: "Trusted By (Clients)"
+    files:
+      - name: "clients_list"
+        label: "All clients & suppliers"
+        file: "content/data/clients.json"
+        description: "Add every celebrity, business, or supplier here. These appear in the 'Trusted by' section on the live site."
+        fields:
+          - name: "items"
+            label: "Clients"
+            label_singular: "Client"
+            widget: "list"
+            summary: "{{fields.name}} ({{fields.type}})"
+            fields:
+              - { name: "name", label: "Client / supplier name", widget: "string" }
+              - name: "type"
+                label: "Type"
+                widget: "select"
+                options: ["Celebrity","Commercial & Business"]
