@@ -729,17 +729,8 @@ const CATEGORIES=[
    ]},
    {name:'Buffets & Sideboards',designs:[]}
  ]},
- {key:'modular-cabinets',name:'Modular Cabinets',cover:'',grad:'c3',blurb:'Storage and built-ins designed to fit your space exactly.',types:[
-   {name:'Kitchen Cabinets',designs:[]},{name:'Storage Cabinets',designs:[]},{name:'Display Cabinets',designs:[]}
- ]},
  {key:'mattresses',name:'Mattresses',cover:'',grad:'c5',blurb:'Foam and spring mattresses, made to your comfort.',types:[
    {name:'Foam Mattresses',designs:[]},{name:'Spring Mattresses',designs:[]}
- ]},
- {key:'curtains-blinds',name:'Curtains & Blinds',cover:'',grad:'c2',blurb:'Curtains, blinds, and shades to finish every window.',types:[
-   {name:'Curtains',designs:[]},{name:'Blinds',designs:[]},{name:'Roman Shades',designs:[]}
- ]},
- {key:'commercial-custom',name:'Commercial & Custom',cover:'imgC6',blurb:'Full-home projects and bespoke pieces for businesses and one-of-a-kind requests.',types:[
-   {name:'Office & Commercial',designs:[]},{name:'Full-Home Projects',designs:[]},{name:'Custom Pieces',designs:[]}
  ]}
 ];
 function _catByName(n){var s=(n||'').toLowerCase().trim();for(var i=0;i<CATEGORIES.length;i++){if(CATEGORIES[i].name.toLowerCase()===s)return CATEGORIES[i];}return null;}
@@ -761,8 +752,16 @@ function renderCategoryCards(){
   });
 }
 
+/* Netlify Image CDN — auto-resize + compress any locally-uploaded photo on delivery.
+   Big admin uploads (even 20-30MB) get served small & fast. Leaves CSS img-classes,
+   remote URLs, and already-optimized paths untouched. */
+function nio(u,w,q){
+  if(!u||typeof u!=='string')return u;
+  if(u.charAt(0)!=='/'||u.indexOf('/.netlify/')===0)return u;
+  return '/.netlify/images?url='+encodeURIComponent(u)+'&w='+(w||1200)+'&q='+(q||72);
+}
 function _isImgClass(r){return typeof r==='string' && /^img[A-Za-z0-9]+$/.test(r);}
-function _phMarkup(ref){return _isImgClass(ref)?'<div class="ph '+ref+'"></div>':'<div class="ph" style="background-image:url('+ref+')"></div>';}
+function _phMarkup(ref){return _isImgClass(ref)?'<div class="ph '+ref+'"></div>':'<div class="ph" style="background-image:url('+nio(ref,900)+')"></div>';}
 function openCollection(key){
   var cat=null; for(var i=0;i<CATEGORIES.length;i++){if(CATEGORIES[i].key===key)cat=CATEGORIES[i];}
   if(!cat)return;
@@ -789,8 +788,8 @@ function openDesign(d,eyebrow){
   document.getElementById('lbEye').textContent=eyebrow;
   document.getElementById('lbTitle').textContent=d.title;
   document.getElementById('lbSpec').textContent=d.spec; th.innerHTML='';
-  function setMain(c){main.className=main.className.split(' ').filter(function(k){return k.indexOf('img')!==0;}).join(' ');main.style.backgroundImage='';if(_isImgClass(c)){main.classList.add(c);}else{main.style.backgroundImage='url('+c+')';}Array.prototype.forEach.call(th.children,function(x){x.classList.toggle('on',x.dataset.c===c);});}
-  d.imgs.forEach(function(c){var t=document.createElement('div');t.className='lb-thumb'+(_isImgClass(c)?' '+c:'');if(!_isImgClass(c))t.style.backgroundImage='url('+c+')';t.dataset.c=c;t.onclick=function(){setMain(c);};th.appendChild(t);});
+  function setMain(c){main.className=main.className.split(' ').filter(function(k){return k.indexOf('img')!==0;}).join(' ');main.style.backgroundImage='';if(_isImgClass(c)){main.classList.add(c);}else{main.style.backgroundImage='url('+nio(c,1600)+')';}Array.prototype.forEach.call(th.children,function(x){x.classList.toggle('on',x.dataset.c===c);});}
+  d.imgs.forEach(function(c){var t=document.createElement('div');t.className='lb-thumb'+(_isImgClass(c)?' '+c:'');if(!_isImgClass(c))t.style.backgroundImage='url('+nio(c,300)+')';t.dataset.c=c;t.onclick=function(){setMain(c);};th.appendChild(t);});
   th.style.display=d.imgs.length>1?'flex':'none';
   setMain(d.imgs[0]); _curItem={title:d.title,eye:eyebrow}; resetCfg(); lb.classList.add('on');
 }
@@ -803,7 +802,7 @@ function showProjects(kind,btn){
   if(!list.length){e.style.display='block';e.textContent=kind+' projects coming soon — we’ll add photos of delivered work here.';g.style.display='none';return;}
   e.style.display='none';g.style.display='grid';
   list.forEach(function(p){(p.photos||[]).filter(Boolean).forEach(function(src){
-    var it=document.createElement('div');it.className='gitem photo';it.style.backgroundImage='url('+src+')';
+    var it=document.createElement('div');it.className='gitem photo';it.style.backgroundImage='url('+nio(src,900)+')';
     if(p.title){var l=document.createElement('span');l.className='lbl';l.textContent=p.title;it.appendChild(l);}
     g.appendChild(it);
   });});
@@ -829,7 +828,7 @@ function addCompare(s){
   if(sel.fabrics.length>=3){alert('You can compare up to 3 swatches. Remove one first.');return;}
   sel.fabrics.push(s.code);
   var main=document.getElementById('lbMain');
-  var cmp=document.createElement('div');cmp.className='lb-cmp on';cmp.dataset.code=s.code;cmp.style.backgroundImage='url('+s.img+')';
+  var cmp=document.createElement('div');cmp.className='lb-cmp on';cmp.dataset.code=s.code;cmp.style.backgroundImage='url('+nio(s.img,300)+')';
   var off=sel.fabrics.length-1;cmp.style.right=(14+off*26)+'px';cmp.style.bottom=(14+off*26)+'px';
   cmp.innerHTML='<span class="x" onclick="rmCompare(\''+s.code+'\')">\u2715</span><span class="lbl">'+s.code+'</span>';
   main.appendChild(cmp);makeDraggable(cmp);
@@ -848,7 +847,7 @@ function renderCfg(){
   function drawGrid(color){
     sg.innerHTML='';
     REAL_SWATCHES.filter(function(s){return (s.color||'Other')===color;}).forEach(function(s){
-      var d=document.createElement('div');d.className='swg';d.dataset.code=s.code;d.style.backgroundImage='url('+s.img+')';d.title=s.code;
+      var d=document.createElement('div');d.className='swg';d.dataset.code=s.code;d.style.backgroundImage='url('+nio(s.img,400)+')';d.title=s.code;
       d.onclick=function(){if(sel.fabrics.indexOf(s.code)>-1){rmCompare(s.code);}else{addCompare(s);}};
       sg.appendChild(d);
     });
@@ -901,7 +900,7 @@ showProjects('Residential');
     .then(function(r){return r.ok?r.json():null;})
     .then(function(d){
       if(!d||!d.items||!d.items.length)return;
-      REAL_SWATCHES=d.items.filter(function(s){return s&&s.code&&s.photo;}).map(function(s){return {code:s.code,img:s.photo,color:s.color||'Other'};});
+      REAL_SWATCHES=d.items.filter(function(s){return s&&s.code&&s.photos&&s.photos.length;}).map(function(s){return {code:s.code,img:s.photos[0],color:s.color||'Other'};});
       if(REAL_SWATCHES.length && document.getElementById('lb').classList.contains('on')){renderCfg();}
     }).catch(function(){});
   /* Products (append CMS products into categories/types) */
@@ -929,6 +928,14 @@ showProjects('Residential');
     }).catch(function(){});
 })();
 
+</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if(window.netlifyIdentity){
+    window.netlifyIdentity.on("init", function(user){
+      if(!user){ window.netlifyIdentity.on("login", function(){ document.location.href="/admin/"; }); }
+    });
+  }
 </script>
 </body>
 </html>
