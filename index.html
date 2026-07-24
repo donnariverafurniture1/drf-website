@@ -294,8 +294,12 @@
   .swcolor:hover{border-color:var(--ink);color:var(--ink)}
   .swcolor.on{background:var(--ink);color:var(--porcelain);border-color:var(--ink)}
   .swgrid{display:flex;flex-wrap:wrap;gap:10px}
-  .swg{width:48px;height:48px;border-radius:5px;background-size:cover;background-position:center;cursor:pointer;border:1px solid #fff;box-shadow:0 0 0 1px var(--line);transition:.15s}
+  .swg{position:relative;width:48px;height:48px;border-radius:5px;background-size:cover;background-position:center;cursor:pointer;border:1px solid #fff;box-shadow:0 0 0 1px var(--line);transition:.15s}
   .swg.on{box-shadow:0 0 0 2px var(--rose-deep);transform:scale(1.06)}
+  .tagrow{position:absolute;top:-4px;right:-4px;display:flex;gap:1px;line-height:1}
+  .tagrow .tagb{font-size:.62rem;background:#fff;border-radius:50%;width:14px;height:14px;display:grid;place-items:center;box-shadow:0 1px 3px rgba(33,27,22,.35)}
+  .tagrow.cmp{position:absolute;top:6px;left:6px;right:auto}
+  .tagrow.cmp .tagb{width:16px;height:16px;font-size:.68rem}
   .lb-cmp{position:absolute;bottom:14px;right:14px;width:120px;height:120px;border-radius:8px;background-size:cover;background-position:center;box-shadow:0 16px 38px -8px rgba(33,27,22,.6);border:1px solid #fff;display:none;cursor:grab;touch-action:none;user-select:none}
   .lb-cmp.on{display:block}
   .lb-cmp .lbl{position:absolute;bottom:6px;left:50%;transform:translateX(-50%);background:rgba(33,27,22,.8);color:#fff;font-family:'Jost';font-weight:400;font-size:.56rem;letter-spacing:.08em;padding:3px 10px;border-radius:100px;white-space:nowrap}
@@ -809,7 +813,9 @@ function showProjects(kind,btn){
 }
 function closeLb(){document.getElementById('lb').classList.remove('on');}
 document.getElementById('lb').addEventListener('click',function(e){if(e.target.id==='lb')closeLb();});
-let REAL_SWATCHES=[{code:'310',img:'/images/swatch-310.jpg',color:'Green'}];
+let REAL_SWATCHES=[{code:'310',img:'/images/swatch-310.jpg',color:'Green',tags:[]}];
+var TAG_ICON={'Water Resistant':'💧','Pet Friendly':'🐾','Best Seller':'★'};
+function _tagBadges(tags){return (tags||[]).filter(function(t){return TAG_ICON[t];}).map(function(t){return '<span class="tagb" title="'+t+'">'+TAG_ICON[t]+'</span>';}).join('');}
 const FINISHES=['Natural wood','Walnut','Black','White lacquer','Gold-tipped legs'];
 const ADDONS=['Extra scatter cushions','Storage drawers','Nailhead trim','Contrast piping'];
 var sel={fabrics:[],finish:null,addons:[]};var cart=[];
@@ -830,7 +836,7 @@ function addCompare(s){
   var main=document.getElementById('lbMain');
   var cmp=document.createElement('div');cmp.className='lb-cmp on';cmp.dataset.code=s.code;cmp.style.backgroundImage='url('+nio(s.img,300)+')';
   var off=sel.fabrics.length-1;cmp.style.right=(14+off*26)+'px';cmp.style.bottom=(14+off*26)+'px';
-  cmp.innerHTML='<span class="x" onclick="rmCompare(\''+s.code+'\')">\u2715</span><span class="lbl">'+s.code+'</span>';
+  cmp.innerHTML='<span class="x" onclick="rmCompare(\''+s.code+'\')">\u2715</span><span class="lbl">'+s.code+'</span>'+(s.tags&&s.tags.length?'<span class="tagrow cmp">'+_tagBadges(s.tags)+'</span>':'');
   main.appendChild(cmp);makeDraggable(cmp);
   document.getElementById('fabName').textContent=sel.fabrics.join(', ');
   markSw();
@@ -847,7 +853,8 @@ function renderCfg(){
   function drawGrid(color){
     sg.innerHTML='';
     REAL_SWATCHES.filter(function(s){return (s.color||'Other')===color;}).forEach(function(s){
-      var d=document.createElement('div');d.className='swg';d.dataset.code=s.code;d.style.backgroundImage='url('+nio(s.img,400)+')';d.title=s.code;
+      var d=document.createElement('div');d.className='swg';d.dataset.code=s.code;d.style.backgroundImage='url('+nio(s.img,400)+')';d.title=s.code+(s.tags&&s.tags.length?' · '+s.tags.join(', '):'');
+      if(s.tags&&s.tags.length){d.innerHTML='<span class="tagrow">'+_tagBadges(s.tags)+'</span>';}
       d.onclick=function(){if(sel.fabrics.indexOf(s.code)>-1){rmCompare(s.code);}else{addCompare(s);}};
       sg.appendChild(d);
     });
@@ -900,7 +907,7 @@ showProjects('Residential');
     .then(function(r){return r.ok?r.json():null;})
     .then(function(d){
       if(!d||!d.items||!d.items.length)return;
-      REAL_SWATCHES=d.items.filter(function(s){return s&&s.code&&s.photos&&s.photos.length;}).map(function(s){return {code:s.code,img:s.photos[0],color:s.color||'Other'};});
+      REAL_SWATCHES=d.items.filter(function(s){return s&&s.code&&s.photos&&s.photos.length;}).map(function(s){return {code:s.code,img:s.photos[0],color:s.color||'Other',tags:s.tags||[]};});
       if(REAL_SWATCHES.length && document.getElementById('lb').classList.contains('on')){renderCfg();}
     }).catch(function(){});
   /* Products (append CMS products into categories/types) */
