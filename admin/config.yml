@@ -26,7 +26,14 @@ collections:
                 label: "Colour group (swatches are grouped by this on the site)"
                 widget: "select"
                 options: ["Beige & Cream","White","Grey","Black & Charcoal","Brown & Tan","Blue","Green","Pink & Rose","Red & Maroon","Yellow & Gold","Purple","Orange","Multi & Pattern"]
-              - { name: "line", label: "Fabric line (e.g. Local, Premium)", widget: "string", required: false }
+              - { name: "line", label: "Fabric line / hanger name (e.g. Local, Premium, Kashmir Green)", widget: "string", required: false }
+              - name: "tags"
+                label: "Special Tags (optional)"
+                widget: "select"
+                multiple: true
+                required: false
+                options: ["Water Resistant","Pet Friendly","Best Seller"]
+                hint: "Shows as a small badge on the swatch on the live site."
               - name: "photos"
                 label: "Swatch Photo(s)"
                 label_singular: "Photo"
