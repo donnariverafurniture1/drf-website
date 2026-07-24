@@ -1,9 +1,2952 @@
 {
   "items": [
     {
-      "photos": ["/images/uploads/drfjuly10226_swatches-195.jpg"],
+      "photos": [
+        "/images/uploads/drfjuly10226_swatches-195.jpg"
+      ],
       "code": "m",
       "color": "Beige & Cream"
+    },
+    {
+      "code": "Laina Pro 11",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/laina-pro-11.jpg"
+      ]
+    },
+    {
+      "code": "Rome Pro 3",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/rome-pro-3.jpg"
+      ]
+    },
+    {
+      "code": "Tampa 2",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tampa-2.jpg"
+      ]
+    },
+    {
+      "code": "Dallas Pro 20",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/dallas-pro-20.jpg"
+      ]
+    },
+    {
+      "code": "Saint 9",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/saint-9.jpg"
+      ]
+    },
+    {
+      "code": "Mondo 9",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mondo-9.jpg"
+      ]
+    },
+    {
+      "code": "Houston 6",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/houston-6.jpg"
+      ]
+    },
+    {
+      "code": "Huicota 3",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/huicota-3.jpg"
+      ]
+    },
+    {
+      "code": "Pug 12",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/pug-12.jpg"
+      ]
+    },
+    {
+      "code": "Mongolia 7",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/mongolia-7.jpg"
+      ]
+    },
+    {
+      "code": "Green 4",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/green-4.jpg"
+      ]
+    },
+    {
+      "code": "Evans-B 3",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/evans-b-3.jpg"
+      ]
+    },
+    {
+      "code": "Coronado 2",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/coronado-2.jpg"
+      ]
+    },
+    {
+      "code": "Bichon Frise 3",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/bichon-frise-3.jpg"
+      ]
+    },
+    {
+      "code": "Nest 8",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/nest-8.jpg"
+      ]
+    },
+    {
+      "code": "Denver 3",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/denver-3.jpg"
+      ]
+    },
+    {
+      "code": "Reading 7",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/reading-7.jpg"
+      ]
+    },
+    {
+      "code": "La Paz 3",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/la-paz-3.jpg"
+      ]
+    },
+    {
+      "code": "Austin 5",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/austin-5.jpg"
+      ]
+    },
+    {
+      "code": "Tucson 4",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tucson-4.jpg"
+      ]
+    },
+    {
+      "code": "Mill 22",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mill-22.jpg"
+      ]
+    },
+    {
+      "code": "Yangtze 8",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/yangtze-8.jpg"
+      ]
+    },
+    {
+      "code": "Raleigh 4",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/raleigh-4.jpg"
+      ]
+    },
+    {
+      "code": "Charlo 11",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/charlo-11.jpg"
+      ]
+    },
+    {
+      "code": "Los Angeles Pro 7",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/los-angeles-pro-7.jpg"
+      ]
+    },
+    {
+      "code": "Horus 10",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/horus-10.jpg"
+      ]
+    },
+    {
+      "code": "Waukesi 4",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/waukesi-4.jpg"
+      ]
+    },
+    {
+      "code": "Niot 3",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/niot-3.jpg"
+      ]
+    },
+    {
+      "code": "Anna 5",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/anna-5.jpg"
+      ]
+    },
+    {
+      "code": "Tulsa 3",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tulsa-3.jpg"
+      ]
+    },
+    {
+      "code": "Baby Alpaca 6",
+      "color": "Brown & Tan",
+      "line": "Mocha Mousse",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/baby-alpaca-6.jpg"
+      ]
+    },
+    {
+      "code": "Pug 11",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/pug-11.jpg"
+      ]
+    },
+    {
+      "code": "Mongolia 6",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/mongolia-6.jpg"
+      ]
+    },
+    {
+      "code": "Green 1",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/green-1.jpg"
+      ]
+    },
+    {
+      "code": "Evans-B 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/evans-b-2.jpg"
+      ]
+    },
+    {
+      "code": "Coronado 1",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/coronado-1.jpg"
+      ]
+    },
+    {
+      "code": "Bichon Frise 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/bichon-frise-2.jpg"
+      ]
+    },
+    {
+      "code": "Nest 7",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/nest-7.jpg"
+      ]
+    },
+    {
+      "code": "Denver 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/denver-2.jpg"
+      ]
+    },
+    {
+      "code": "Reading 6",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/reading-6.jpg"
+      ]
+    },
+    {
+      "code": "La Paz 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/la-paz-2.jpg"
+      ]
+    },
+    {
+      "code": "Austin 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/austin-2.jpg"
+      ]
+    },
+    {
+      "code": "Tucson 19",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tucson-19.jpg"
+      ]
+    },
+    {
+      "code": "Mill 8",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mill-8.jpg"
+      ]
+    },
+    {
+      "code": "Yangtze 7",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/yangtze-7.jpg"
+      ]
+    },
+    {
+      "code": "Raleigh 18",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/raleigh-18.jpg"
+      ]
+    },
+    {
+      "code": "Chario 6",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/chario-6.jpg"
+      ]
+    },
+    {
+      "code": "Los Angeles Pro 6",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/los-angeles-pro-6.jpg"
+      ]
+    },
+    {
+      "code": "Horus 8",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/horus-8.jpg"
+      ]
+    },
+    {
+      "code": "Waukesi 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/waukesi-2.jpg"
+      ]
+    },
+    {
+      "code": "Niot 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/niot-2.jpg"
+      ]
+    },
+    {
+      "code": "Anna 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/anna-2.jpg"
+      ]
+    },
+    {
+      "code": "Tulsa 1",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tulsa-1.jpg"
+      ]
+    },
+    {
+      "code": "Baby Alpaca 4",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/baby-alpaca-4.jpg"
+      ]
+    },
+    {
+      "code": "Laina Pro 7",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/laina-pro-7.jpg"
+      ]
+    },
+    {
+      "code": "Rome Pro 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/rome-pro-2.jpg"
+      ]
+    },
+    {
+      "code": "Tampa 7",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tampa-7.jpg"
+      ]
+    },
+    {
+      "code": "Dallas Pro 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/dallas-pro-2.jpg"
+      ]
+    },
+    {
+      "code": "Saint 8",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/saint-8.jpg"
+      ]
+    },
+    {
+      "code": "UNCLEAR-IMG_20260724_040403",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/unclear-img-20260724-040403.jpg"
+      ]
+    },
+    {
+      "code": "Houston 2",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/houston-2.jpg"
+      ]
+    },
+    {
+      "code": "Huicota 16",
+      "color": "Beige & Cream",
+      "line": "Parchment Beige",
+      "tags": [],
+      "photos": [
+        "/images/uploads/huicota-16.jpg"
+      ]
+    },
+    {
+      "code": "Denver 15",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/nest-21.jpg"
+      ]
+    },
+    {
+      "code": "Huicota 11",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/huicota-11.jpg"
+      ]
+    },
+    {
+      "code": "Pug 6",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/pug-6.jpg"
+      ]
+    },
+    {
+      "code": "Mongolia 17",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/mongolia-17.jpg"
+      ]
+    },
+    {
+      "code": "Green 11",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/green-11.jpg"
+      ]
+    },
+    {
+      "code": "Evans-B 7",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/evans-b-7.jpg"
+      ]
+    },
+    {
+      "code": "Coronado 9",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/coronado-9.jpg"
+      ]
+    },
+    {
+      "code": "Bichon Frise 7",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/bichon-frise-7.jpg"
+      ]
+    },
+    {
+      "code": "Denver 12",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/denver-12.jpg"
+      ]
+    },
+    {
+      "code": "Reading 15",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/reading-15.jpg"
+      ]
+    },
+    {
+      "code": "La Paz 12",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/la-paz-12.jpg"
+      ]
+    },
+    {
+      "code": "Austin 10",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/austin-10.jpg"
+      ]
+    },
+    {
+      "code": "Tucson 11",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tucson-11.jpg"
+      ]
+    },
+    {
+      "code": "Mill 26",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mill-26.jpg"
+      ]
+    },
+    {
+      "code": "Yangtze 16",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/yangtze-16.jpg"
+      ]
+    },
+    {
+      "code": "Raleigh 11",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/raleigh-11.jpg"
+      ]
+    },
+    {
+      "code": "Charlo 18",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/charlo-18.jpg"
+      ]
+    },
+    {
+      "code": "Los Angeles Pro 16",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/los-angeles-pro-16.jpg"
+      ]
+    },
+    {
+      "code": "Horus 21",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/horus-21.jpg"
+      ]
+    },
+    {
+      "code": "Waukesi 12",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/waukesi-12.jpg"
+      ]
+    },
+    {
+      "code": "Niot 7",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/niot-7.jpg"
+      ]
+    },
+    {
+      "code": "Anna 15",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/anna-15.jpg"
+      ]
+    },
+    {
+      "code": "Tulsa 12",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tulsa-12.jpg"
+      ]
+    },
+    {
+      "code": "Baby Alpaca 18",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/baby-alpaca-18.jpg"
+      ]
+    },
+    {
+      "code": "Laina Pro 26",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/laina-pro-26.jpg"
+      ]
+    },
+    {
+      "code": "Rome Pro 36",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/rome-pro-36.jpg"
+      ]
+    },
+    {
+      "code": "Tampa 16",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tampa-16.jpg"
+      ]
+    },
+    {
+      "code": "Dallas Pro 15",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/dallas-pro-15.jpg"
+      ]
+    },
+    {
+      "code": "Saint 19",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/saint-19.jpg"
+      ]
+    },
+    {
+      "code": "Mondo 16",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mondo-16.jpg"
+      ]
+    },
+    {
+      "code": "Houston 22",
+      "color": "Blue",
+      "line": "Deja Vu Blue",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/houston-22.jpg"
+      ]
+    },
+    {
+      "code": "Mongolia 11",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/mongolia-11.jpg"
+      ]
+    },
+    {
+      "code": "Green 5",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/green-5.jpg"
+      ]
+    },
+    {
+      "code": "Evans-B 5",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/evans-b-5.jpg"
+      ]
+    },
+    {
+      "code": "Coronado 7",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/coronado-7.jpg"
+      ]
+    },
+    {
+      "code": "Tampa 5",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tampa-5.jpg"
+      ]
+    },
+    {
+      "code": "Rome Pro 32",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/rome-pro-32.jpg"
+      ]
+    },
+    {
+      "code": "Laina Pro 14",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/laina-pro-14.jpg"
+      ]
+    },
+    {
+      "code": "Babyalpaca 10",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/babyalpaca-10.jpg"
+      ]
+    },
+    {
+      "code": "Niot 5",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/niot-5.jpg"
+      ]
+    },
+    {
+      "code": "Waukesi 10",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/waukesi-10.jpg"
+      ]
+    },
+    {
+      "code": "Horus 14",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/horus-14.jpg"
+      ]
+    },
+    {
+      "code": "Charlo 13",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/charlo-13.jpg"
+      ]
+    },
+    {
+      "code": "Raleigh 22",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/raleigh-22.jpg"
+      ]
+    },
+    {
+      "code": "Yangtze 12",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/yangtze-12.jpg"
+      ]
+    },
+    {
+      "code": "Denver 8",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/denver-8.jpg"
+      ]
+    },
+    {
+      "code": "Reading 8",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/reading-8.jpg"
+      ]
+    },
+    {
+      "code": "La Paz 11",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/la-paz-11.jpg"
+      ]
+    },
+    {
+      "code": "Austin 8",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/austin-8.jpg"
+      ]
+    },
+    {
+      "code": "Tucson 8",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tucson-8.jpg"
+      ]
+    },
+    {
+      "code": "Mill 24",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mill-24.jpg"
+      ]
+    },
+    {
+      "code": "Losangeles Pro 12",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/losangeles-pro-12.jpg"
+      ]
+    },
+    {
+      "code": "Anna 8",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/anna-8.jpg"
+      ]
+    },
+    {
+      "code": "Tulsa 7",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tulsa-7.jpg"
+      ]
+    },
+    {
+      "code": "Dallas Pro 11",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/dallas-pro-11.jpg"
+      ]
+    },
+    {
+      "code": "Mondo 12",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mondo-12.jpg"
+      ]
+    },
+    {
+      "code": "Houston 17",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/houston-17.jpg"
+      ]
+    },
+    {
+      "code": "Huicota 9",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/huicota-9.jpg"
+      ]
+    },
+    {
+      "code": "Pug 13",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/pug-13.jpg"
+      ]
+    },
+    {
+      "code": "Bichon Frise 5",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/bichon-frise-5.jpg"
+      ]
+    },
+    {
+      "code": "Nest 13",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/nest-13.jpg"
+      ]
+    },
+    {
+      "code": "Bichon Frise 10",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/bichon-frise-10.jpg"
+      ]
+    },
+    {
+      "code": "Coronado 16",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/coronado-16.jpg"
+      ]
+    },
+    {
+      "code": "Evans-B 10",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/evans-b-10.jpg"
+      ]
+    },
+    {
+      "code": "Green 18",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/green-18.jpg"
+      ]
+    },
+    {
+      "code": "Mongolia 1",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/mongolia-1.jpg"
+      ]
+    },
+    {
+      "code": "Pug 40",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/pug-40.jpg"
+      ]
+    },
+    {
+      "code": "Huicota 15",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/huicota-15.jpg"
+      ]
+    },
+    {
+      "code": "Houston 30",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/houston-30.jpg"
+      ]
+    },
+    {
+      "code": "Mondo 1",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mondo-1.jpg"
+      ]
+    },
+    {
+      "code": "Saint 1",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/saint-1.jpg"
+      ]
+    },
+    {
+      "code": "Dallas Pro 18",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/dallas-pro-18.jpg"
+      ]
+    },
+    {
+      "code": "Tampa 23",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tampa-23.jpg"
+      ]
+    },
+    {
+      "code": "Rome Pro 40",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/rome-pro-40.jpg"
+      ]
+    },
+    {
+      "code": "Laina Pro 1",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/laina-pro-1.jpg"
+      ]
+    },
+    {
+      "code": "Babyalpaca 1",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/babyalpaca-1.jpg"
+      ]
+    },
+    {
+      "code": "Tulsa 20",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tulsa-20.jpg"
+      ]
+    },
+    {
+      "code": "Anna 18",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/anna-18.jpg"
+      ]
+    },
+    {
+      "code": "Niot 11",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/niot-11.jpg"
+      ]
+    },
+    {
+      "code": "Waukesi 18",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/waukesi-18.jpg"
+      ]
+    },
+    {
+      "code": "Morus 1",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/morus-1.jpg"
+      ]
+    },
+    {
+      "code": "Losangeles Pro 1",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/losangeles-pro-1.jpg"
+      ]
+    },
+    {
+      "code": "Charlo 1",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/charlo-1.jpg"
+      ]
+    },
+    {
+      "code": "Raleigh 17",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/raleigh-17.jpg"
+      ]
+    },
+    {
+      "code": "Yangtze 1",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/yangtze-1.jpg"
+      ]
+    },
+    {
+      "code": "Mill 1",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mill-1.jpg"
+      ]
+    },
+    {
+      "code": "Tucson 14",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tucson-14.jpg"
+      ]
+    },
+    {
+      "code": "Austin 16",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/austin-16.jpg"
+      ]
+    },
+    {
+      "code": "La Paz 17",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/la-paz-17.jpg"
+      ]
+    },
+    {
+      "code": "Reading 22",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/reading-22.jpg"
+      ]
+    },
+    {
+      "code": "Denver 16",
+      "color": "Grey",
+      "line": "Shadow Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/denver-16.jpg"
+      ]
+    },
+    {
+      "code": "Reading 21",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/reading-21.jpg"
+      ]
+    },
+    {
+      "code": "La Paz 16",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/la-paz-16.jpg"
+      ]
+    },
+    {
+      "code": "Austin 15",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/austin-15.jpg"
+      ]
+    },
+    {
+      "code": "Tucson 6",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tucson-6.jpg"
+      ]
+    },
+    {
+      "code": "Mill 3",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mill-3.jpg"
+      ]
+    },
+    {
+      "code": "Yangtze 3",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/yangtze-3.jpg"
+      ]
+    },
+    {
+      "code": "Raleigh 16",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/raleigh-16.jpg"
+      ]
+    },
+    {
+      "code": "Charlo 2",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/charlo-2.jpg"
+      ]
+    },
+    {
+      "code": "Los Angeles Pro 2",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/los-angeles-pro-2.jpg"
+      ]
+    },
+    {
+      "code": "Horus 3",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/horus-3.jpg"
+      ]
+    },
+    {
+      "code": "Waukesi 17",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/waukesi-17.jpg"
+      ]
+    },
+    {
+      "code": "Niot 10",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/niot-10.jpg"
+      ]
+    },
+    {
+      "code": "Anna 17",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/anna-17.jpg"
+      ]
+    },
+    {
+      "code": "Tulsa 17",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tulsa-17.jpg"
+      ]
+    },
+    {
+      "code": "Laina Pro 3",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/laina-pro-3.jpg"
+      ]
+    },
+    {
+      "code": "Rome Pro 20",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/rome-pro-20.jpg"
+      ]
+    },
+    {
+      "code": "Tampa 21",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tampa-21.jpg"
+      ]
+    },
+    {
+      "code": "Dallas Pro 17",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/dallas-pro-17.jpg"
+      ]
+    },
+    {
+      "code": "Saint 3",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/saint-3.jpg"
+      ]
+    },
+    {
+      "code": "Mondo 3",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mondo-3.jpg"
+      ]
+    },
+    {
+      "code": "Houston 28",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/houston-28.jpg"
+      ]
+    },
+    {
+      "code": "Huicota 14",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/huicota-14.jpg"
+      ]
+    },
+    {
+      "code": "Pug 26",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/pug-26.jpg"
+      ]
+    },
+    {
+      "code": "Mongolia 2",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/mongolia-2.jpg"
+      ]
+    },
+    {
+      "code": "Green 16",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/green-16.jpg"
+      ]
+    },
+    {
+      "code": "Evans-B 9",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/evans-b-9.jpg"
+      ]
+    },
+    {
+      "code": "Coronado 14",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/coronado-14.jpg"
+      ]
+    },
+    {
+      "code": "Bichon Frise 9",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/bichon-frise-9.jpg"
+      ]
+    },
+    {
+      "code": "Nest 3",
+      "color": "Grey",
+      "line": "Secret Base Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/nest-3.jpg"
+      ]
+    },
+    {
+      "code": "Mill 27",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mill-27.jpg"
+      ]
+    },
+    {
+      "code": "Tucson 3",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tucson-3.jpg"
+      ]
+    },
+    {
+      "code": "Austin 13",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/austin-13.jpg"
+      ]
+    },
+    {
+      "code": "La Paz 15",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/la-paz-15.jpg"
+      ]
+    },
+    {
+      "code": "Reading 19",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/reading-19.jpg"
+      ]
+    },
+    {
+      "code": "Denver 14",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/denver-14.jpg"
+      ]
+    },
+    {
+      "code": "Saint 4",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/saint-4.jpg"
+      ]
+    },
+    {
+      "code": "Mondo 5",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mondo-5.jpg"
+      ]
+    },
+    {
+      "code": "Houston 25",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/houston-25.jpg"
+      ]
+    },
+    {
+      "code": "Huicota 13",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/huicota-13.jpg"
+      ]
+    },
+    {
+      "code": "Pug 30",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/pug-30.jpg"
+      ]
+    },
+    {
+      "code": "Mongolia 4",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/mongolia-4.jpg"
+      ]
+    },
+    {
+      "code": "Green 15",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/green-15.jpg"
+      ]
+    },
+    {
+      "code": "Evans-B 8",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/evans-b-8.jpg"
+      ]
+    },
+    {
+      "code": "Coronado 13",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/coronado-13.jpg"
+      ]
+    },
+    {
+      "code": "Bichon Frise 8",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/bichon-frise-8.jpg"
+      ]
+    },
+    {
+      "code": "Nest 4",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/nest-4.jpg"
+      ]
+    },
+    {
+      "code": "Yangtze 5",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/yangtze-5.jpg"
+      ]
+    },
+    {
+      "code": "Raleigh 14",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/raleigh-14.jpg"
+      ]
+    },
+    {
+      "code": "Charlo 3",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/charlo-3.jpg"
+      ]
+    },
+    {
+      "code": "Los Angeles Pro 3",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/los-angeles-pro-3.jpg"
+      ]
+    },
+    {
+      "code": "Horus 6",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/horus-6.jpg"
+      ]
+    },
+    {
+      "code": "Niot 9",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/niot-9.jpg"
+      ]
+    },
+    {
+      "code": "Anna 16",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/anna-16.jpg"
+      ]
+    },
+    {
+      "code": "Tulsa 15",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tulsa-15.jpg"
+      ]
+    },
+    {
+      "code": "Baby Alpaca 2",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/baby-alpaca-2.jpg"
+      ]
+    },
+    {
+      "code": "Laina Pro 5",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/laina-pro-5.jpg"
+      ]
+    },
+    {
+      "code": "Rome Pro 19",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/rome-pro-19.jpg"
+      ]
+    },
+    {
+      "code": "Tampa 20",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tampa-20.jpg"
+      ]
+    },
+    {
+      "code": "Dallas Pro 16",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/dallas-pro-16.jpg"
+      ]
+    },
+    {
+      "code": "Waukesi 15",
+      "color": "Grey",
+      "line": "Glacier Grey",
+      "tags": [],
+      "photos": [
+        "/images/uploads/waukesi-15.jpg"
+      ]
+    },
+    {
+      "code": "Nest 15",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/nest-15.jpg"
+      ]
+    },
+    {
+      "code": "Bichon Frise 4",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/bichon-frise-4.jpg"
+      ]
+    },
+    {
+      "code": "Coronado 6",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/coronado-6.jpg"
+      ]
+    },
+    {
+      "code": "Evans-B 4",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/evans-b-4.jpg"
+      ]
+    },
+    {
+      "code": "Green 7",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/green-7.jpg"
+      ]
+    },
+    {
+      "code": "Mongolia 15",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/mongolia-15.jpg"
+      ]
+    },
+    {
+      "code": "Pug 33",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/pug-33.jpg"
+      ]
+    },
+    {
+      "code": "Huicota 2",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/huicota-2.jpg"
+      ]
+    },
+    {
+      "code": "Houston 14",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/houston-14.jpg"
+      ]
+    },
+    {
+      "code": "Mondo 14",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mondo-14.jpg"
+      ]
+    },
+    {
+      "code": "Saint 13",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/saint-13.jpg"
+      ]
+    },
+    {
+      "code": "Tampa 11",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tampa-11.jpg"
+      ]
+    },
+    {
+      "code": "Rome Pro 31",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/rome-pro-31.jpg"
+      ]
+    },
+    {
+      "code": "Laina Pro 20",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/laina-pro-20.jpg"
+      ]
+    },
+    {
+      "code": "Baby Alpaca 13",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/baby-alpaca-13.jpg"
+      ]
+    },
+    {
+      "code": "Anna 12",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/anna-12.jpg"
+      ]
+    },
+    {
+      "code": "Niot 4",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/niot-4.jpg"
+      ]
+    },
+    {
+      "code": "Waukesi 9",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/waukesi-9.jpg"
+      ]
+    },
+    {
+      "code": "Horus 15",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/horus-15.jpg"
+      ]
+    },
+    {
+      "code": "Los Angeles Pro 11",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/los-angeles-pro-11.jpg"
+      ]
+    },
+    {
+      "code": "Charlo 15",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/charlo-15.jpg"
+      ]
+    },
+    {
+      "code": "Raleigh 23",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/raleigh-23.jpg"
+      ]
+    },
+    {
+      "code": "Yangtze 14",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/yangtze-14.jpg"
+      ]
+    },
+    {
+      "code": "Mill 23",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mill-23.jpg"
+      ]
+    },
+    {
+      "code": "Tucson 16",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tucson-16.jpg"
+      ]
+    },
+    {
+      "code": "Austin 7",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/austin-7.jpg"
+      ]
+    },
+    {
+      "code": "La Paz 8",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/la-paz-8.jpg"
+      ]
+    },
+    {
+      "code": "Reading 11",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/reading-11.jpg"
+      ]
+    },
+    {
+      "code": "Denver 7",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/denver-7.jpg"
+      ]
+    },
+    {
+      "code": "Dallas Pro 23",
+      "color": "Yellow & Gold",
+      "line": "Misty Yellow",
+      "tags": [],
+      "photos": [
+        "/images/uploads/dallas-pro-23.jpg"
+      ]
+    },
+    {
+      "code": "Tampa 19",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tampa-19.jpg"
+      ]
+    },
+    {
+      "code": "Rome Pro 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/rome-pro-1.jpg"
+      ]
+    },
+    {
+      "code": "Houston 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/houston-1.jpg"
+      ]
+    },
+    {
+      "code": "Huicota 12",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/huicota-12.jpg"
+      ]
+    },
+    {
+      "code": "Pug 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/pug-1.jpg"
+      ]
+    },
+    {
+      "code": "Mongolia 5",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/mongolia-5.jpg"
+      ]
+    },
+    {
+      "code": "Green 14",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/green-14.jpg"
+      ]
+    },
+    {
+      "code": "Evans-B 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/evans-b-1.jpg"
+      ]
+    },
+    {
+      "code": "Coronado 12",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/coronado-12.jpg"
+      ]
+    },
+    {
+      "code": "Bichon Frise 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/bichon-frise-1.jpg"
+      ]
+    },
+    {
+      "code": "Nest 6",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/nest-6.jpg"
+      ]
+    },
+    {
+      "code": "Denver 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/denver-1.jpg"
+      ]
+    },
+    {
+      "code": "Reading 18",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [
+        "Water Resistant"
+      ],
+      "photos": [
+        "/images/uploads/reading-18.jpg"
+      ]
+    },
+    {
+      "code": "La Paz 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/la-paz-1.jpg"
+      ]
+    },
+    {
+      "code": "Austin 12",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/austin-12.jpg"
+      ]
+    },
+    {
+      "code": "Tucson 17",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tucson-17.jpg"
+      ]
+    },
+    {
+      "code": "Mill 21",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mill-21.jpg"
+      ]
+    },
+    {
+      "code": "Yangtze 6",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/yangtze-6.jpg"
+      ]
+    },
+    {
+      "code": "Raleigh 13",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/raleigh-13.jpg"
+      ]
+    },
+    {
+      "code": "Chario 5",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/chario-5.jpg"
+      ]
+    },
+    {
+      "code": "Los Angeles Pro 5",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/los-angeles-pro-5.jpg"
+      ]
+    },
+    {
+      "code": "Horus 7",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/horus-7.jpg"
+      ]
+    },
+    {
+      "code": "Waukesi 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/waukesi-1.jpg"
+      ]
+    },
+    {
+      "code": "Niot 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/niot-1.jpg"
+      ]
+    },
+    {
+      "code": "Anna 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/anna-1.jpg"
+      ]
+    },
+    {
+      "code": "Babyalpaca 3",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/babyalpaca-3.jpg"
+      ]
+    },
+    {
+      "code": "Laina Pro 6",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/laina-pro-6.jpg"
+      ]
+    },
+    {
+      "code": "Dallas Pro 1",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/dallas-pro-1.jpg"
+      ]
+    },
+    {
+      "code": "Saint 6",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/saint-6.jpg"
+      ]
+    },
+    {
+      "code": "Mondo 6",
+      "color": "White",
+      "line": "Sweet White",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mondo-6.jpg"
+      ]
+    },
+    {
+      "code": "Laina Pro 23",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/laina-pro-23.jpg"
+      ]
+    },
+    {
+      "code": "Rome Pro 29",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/rome-pro-29.jpg"
+      ]
+    },
+    {
+      "code": "Tampa 9",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tampa-9.jpg"
+      ]
+    },
+    {
+      "code": "Dallas Pro 27",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/dallas-pro-27.jpg"
+      ]
+    },
+    {
+      "code": "Saint 17",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/saint-17.jpg"
+      ]
+    },
+    {
+      "code": "Mondo 15",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mondo-15.jpg"
+      ]
+    },
+    {
+      "code": "Houston 10",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/houston-10.jpg"
+      ]
+    },
+    {
+      "code": "Huicota 5",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/huicota-5.jpg"
+      ]
+    },
+    {
+      "code": "Pug 20",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/pug-20.jpg"
+      ]
+    },
+    {
+      "code": "Mongolia 16",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mongolia-16.jpg"
+      ]
+    },
+    {
+      "code": "Green 6",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/green-6.jpg"
+      ]
+    },
+    {
+      "code": "Evans-B 6",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/evans-b-6.jpg"
+      ]
+    },
+    {
+      "code": "Coronado 19",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/coronado-19.jpg"
+      ]
+    },
+    {
+      "code": "Bichon Frise 6",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/bichon-frise-6.jpg"
+      ]
+    },
+    {
+      "code": "Nest 17",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/nest-17.jpg"
+      ]
+    },
+    {
+      "code": "Denver 5",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly"
+      ],
+      "photos": [
+        "/images/uploads/denver-5.jpg"
+      ]
+    },
+    {
+      "code": "La Paz 5",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/la-paz-5.jpg"
+      ]
+    },
+    {
+      "code": "Tucson 10",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tucson-10.jpg"
+      ]
+    },
+    {
+      "code": "Mill 25",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/mill-25.jpg"
+      ]
+    },
+    {
+      "code": "Yangize 15",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/yangize-15.jpg"
+      ]
+    },
+    {
+      "code": "Raleigh 21",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/raleigh-21.jpg"
+      ]
+    },
+    {
+      "code": "Charlo 17",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/charlo-17.jpg"
+      ]
+    },
+    {
+      "code": "Los Angeles Pro 13",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/los-angeles-pro-13.jpg"
+      ]
+    },
+    {
+      "code": "Horus 19",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/horus-19.jpg"
+      ]
+    },
+    {
+      "code": "Waukesi 7",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/waukesi-7.jpg"
+      ]
+    },
+    {
+      "code": "Niot 6",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [
+        "Water Resistant",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/niot-6.jpg"
+      ]
+    },
+    {
+      "code": "Anna 13",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/anna-13.jpg"
+      ]
+    },
+    {
+      "code": "Tulsa 14",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [],
+      "photos": [
+        "/images/uploads/tulsa-14.jpg"
+      ]
+    },
+    {
+      "code": "Baby Alpaca 15",
+      "color": "Green",
+      "line": "Kashmir Green",
+      "tags": [
+        "Water Resistant",
+        "Pet Friendly",
+        "Best Seller"
+      ],
+      "photos": [
+        "/images/uploads/baby-alpaca-15.jpg"
+      ]
+    },
+    {
+      "code": "Saint 14",
+      "color": "Brown & Tan",
+      "line": "Nut Brown",
+      "tags": [],
+      "photos": [
+        "/images/uploads/saint-14.jpg"
+      ]
     }
   ]
 }
